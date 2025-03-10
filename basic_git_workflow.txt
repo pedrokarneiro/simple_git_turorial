@@ -1,0 +1,84 @@
+HORIZONTAL VIEW
+
+    PROJECT DIRECTORY (or local direcotory) ---(add or stage)--> STAGING AREA (or index) --(commit)--> REPOSITORY (.git subdirectory) --(push)--> REMOTE REPOSITORY (usually on Github)
+
+    ----
+
+    PROJECT DIRECTORY (or local direcotory) <---(unstage)-- STAGING AREA (or index) <--(revert)-- REPOSITORY (.git subdirectory) <--(pull)-- REMOTE REPOSITORY (usually on Github)
+
+====
+
+VERTICAL VIEW
+
+    PROJECT DIRECTORY (or local direcotory)
+        v
+    (add or stage)
+        v
+    STAGING AREA (or index)
+        v
+    (commit)
+        v
+    REPOSITORY (.git subdirectory)
+        v
+    (push)
+        v
+    REMOTE REPOSITORY (usually on Github)
+
+    ----
+
+    PROJECT DIRECTORY (or local direcotory)
+        ^
+    (unstage)
+        ^
+    STAGING AREA (or index) 
+        ^
+    (revert)
+        ^
+    REPOSITORY (.git subdirectory)
+        ^
+    (pull)
+        ^
+    REMOTE REPOSITORY (usually on Github)
+
+ADDING NEW FILES TO THE LOCAL DIRECTORY
+
+    > echo Hello > file1.txt
+    > echo Hello > file2.txt
+    > echo Hello > pedro.txt
+
+STATING CHANGES
+
+    # Will add the files to the staging area.
+    > git add file1.txt file2.txt pedro.txt
+    -- or --
+    > git add *.txt
+    -- or -- 
+    > git add file?.txt pedro.txt
+    -- or --
+    > git add .
+    # . stands for the full current directory, recursively.
+
+CHECK STATUS
+
+    > git status
+
+REMOVING FILES
+
+    > rm pedro.txt
+
+CHECK STATUS
+
+    > git status
+
+STATING CHANGES
+
+    # Will delete pedro.txt from the staging area.
+    > git add pedro.txt
+
+CHECK STATUS
+
+    > git status
+
+COMMITING THE CHANGES
+
+    > git commit -m "The necessary information about the last changes come in here."

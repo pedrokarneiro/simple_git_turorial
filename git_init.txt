@@ -1,0 +1,10 @@
+INIT
+
+    > git init
+    # Creates a .git subdirectory (hidden) under the current directory.
+    # Initializes an empty git repository.
+    # Posh-git is a tool that makes git UI prittier.
+
+    > rm -rf .git
+    # Kills history (will lose history).
+    # Deletes the hidden .git subdirectory.

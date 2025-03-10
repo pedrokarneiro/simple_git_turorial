@@ -1,0 +1,19 @@
+GIT
+
+    Command line - The fastest, easiest, and more complete way.
+    Code editor / IDE - They support basic commands.
+    GUI - Most popular Gitkraken and Sourcetree.
+
+COMMAND LINE
+
+    GUI tools have limitations and are not always available.
+
+CHECKING GIT VERSION
+
+    > git --version
+
+DOWNLOAD
+
+    https://git-scm.com/downloads
+
+

@@ -1,0 +1,13 @@
+GOOGLE
+    
+    git config -> git.config documentation (full) on https://git-scm.com/docs
+
+PROMPT
+
+    > git config --help
+    # Brings full help just like the one under https://git-scm.com/docs.
+    # Space bar = next page
+    # Q = quit
+
+    > git config -h
+    # A quick refresher help.

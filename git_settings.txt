@@ -1,0 +1,47 @@
+GIT SETTINGS
+
+    Name
+    Email
+    Default editor
+    Line ending
+
+LEVELS
+
+    System - All users.
+    Global - All repositories of the current user.
+    Local - The current repository.
+
+FILE
+
+    .gitconfig - The file that stores the configuration.
+
+COMMANDS
+
+    > git config --global user.name yourusername
+    # I use my Github username.
+
+    > git config --global user.email your@email.address
+    # I use my Github e-mail address.
+
+    > git config --global core.editor "code --wait"
+    # This sets VS Code as the default editor.
+    # --wait makes the shell wait until I close the .gitconfig file to return the control to the shell operator.
+    # The message "Hint: Waiting for your editor to close the file..." will desapear as soon as the .gitconfig file is closed.
+
+    > git config --global -e
+    # Opens the default editor with the .gitconfig file.
+
+AUTOCRLF
+
+    ON WINDOWS ENVIRONMENTS
+        > git config --core.autocrlf true
+
+    ON UX AND MAC ENVIRONMENTS
+        > git config --core.autocrlf input
+
+HOW IT WORKS
+    +----------------------+                                                        +-----------------------+
+    | Windows              | --(checkin abc\n)-----> DATABASE --(checkout abc\n)--> | Linux                 |
+    | John                 | <--(checkout abc\r\n)-- DATABASE <--(checkin abc\n)--- | Julie                 |
+    | core.autocrlf = true |                                                        | core.autocrlf = input |
+    +----------------------+                                                        +-----------------------+
